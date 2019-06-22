@@ -1,9 +1,10 @@
 import nm from "nanomatch";
 import { Application, Context } from "probot";
+import getConfig from "probot-config";
 
 export = (robot: Application) => {
 	robot.on("pull_request.closed", async (context: Context) => {
-		const config = await context.config("botamic.yml", {
+		const config = await getConfig(context, "botamic.yml", {
 			exclude: [],
 			include: [],
 		});

@@ -62,7 +62,8 @@
 	},
 	"dependencies": {
 		"nanomatch": "^1.2.13",
-		"probot": "^9.2.15"
+		"probot": "^9.2.15",
+		"probot-config": "^1.0.1"
 	},
 	"devDependencies": {
 		"@types/jest": "^24.0.15",
