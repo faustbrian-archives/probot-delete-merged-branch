@@ -1,6 +1,6 @@
 FROM node:alpine
 
-LABEL "com.github.actions.name"="delete-merged-branch"
+LABEL "com.github.actions.name"="botamic-delete-merged-branch"
 LABEL "com.github.actions.description"="A GitHub App built with Probot that welcomes first-time contributors."
 LABEL "com.github.actions.icon"="code"
 LABEL "com.github.actions.color"="gray-dark"
