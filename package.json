@@ -61,9 +61,10 @@
 		"verbose": true
 	},
 	"dependencies": {
+		"@botamic/toolkit": "^0.1.0",
+		"@hapi/joi": "^15.1.0",
 		"nanomatch": "^1.2.13",
-		"probot": "^9.2.19",
-		"probot-config": "^1.1.0"
+		"probot": "^9.2.19"
 	},
 	"devDependencies": {
 		"@types/jest": "^24.0.15",

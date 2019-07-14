@@ -1,13 +1,10 @@
 import nm from "nanomatch";
 import { Application, Context } from "probot";
-import getConfig from "probot-config";
+import { loadConfig } from "./services/config";
 
 export = (robot: Application) => {
 	robot.on("pull_request.closed", async (context: Context) => {
-		const config = await getConfig(context, "botamic.yml", {
-			exclude: [],
-			include: [],
-		});
+		const { include, exclude } = await loadConfig(context);
 		const headRepoId: string = context.payload.pull_request.head.repo.id;
 		const baseRepoId: string = context.payload.pull_request.base.repo.id;
 
@@ -21,8 +18,8 @@ export = (robot: Application) => {
 			return;
 		}
 
-		if (Array.isArray(config.exclude)) {
-			for (const name of config.exclude) {
+		if (Array.isArray(exclude)) {
+			for (const name of exclude) {
 				if (nm.isMatch(branchName, name)) {
 					context.log.info(
 						`Branch ${branchName} excluded. Keeping ${context.payload.pull_request.head.label}.`,
@@ -32,8 +29,8 @@ export = (robot: Application) => {
 			}
 		}
 
-		if (Array.isArray(config.include)) {
-			for (const name of config.include) {
+		if (Array.isArray(include)) {
+			for (const name of include) {
 				if (!nm.isMatch(branchName, name)) {
 					context.log.info(
 						`Branch ${branchName} not included. Keeping ${context.payload.pull_request.head.label}.`,
