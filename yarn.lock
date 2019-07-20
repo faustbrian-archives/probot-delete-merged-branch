@@ -131,14 +131,14 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
-"@botamic/toolkit@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@botamic/toolkit/-/toolkit-0.1.0.tgz#4fc90f4bc11e1f564c59f2be6b4f3061b6983970"
-  integrity sha512-6iKCPz8kEfXUjTc8UfxnQr7TbmaXT/BYXGGiFgqR8ILtkIuxCm9wx0ZrYE1rI6GywtnQcKXtnUETiwusWEVYrw==
+"@botamic/toolkit@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@botamic/toolkit/-/toolkit-0.3.0.tgz#8fb2c99edff04492685f41a8c79d5a2439c0ab82"
+  integrity sha512-odZubKedLPadkjFqpyt54fiVG1KfrNnCZa6qtnD1XkENmKfj6E1m499c4oedWcoAEQIL6B28WUgWhoo5E23t4g==
   dependencies:
     "@hapi/joi" "^15.1.0"
-    probot "^9.2.15"
-    probot-config "^1.0.1"
+    probot "^9.2.19"
+    probot-config "^1.1.0"
 
 "@cnakazawa/watch@^1.0.3":
   version "1.0.3"
@@ -557,15 +557,15 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.0.10.tgz#51babf9c7deadd5343620055fc8aff7995c8b031"
   integrity sha512-LcsGbPomWsad6wmMNv7nBLw7YYYyfdYcz6xryKYQhx89c3XXan+8Q6AJ43G5XDIaklaVkK3mE4fCb0SBvMiPSQ==
 
-"@types/node@^12.6.2":
-  version "12.6.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.6.2.tgz#a5ccec6abb6060d5f20d256fb03ed743e9774999"
-  integrity sha512-gojym4tX0FWeV2gsW4Xmzo5wxGjXGm550oVUII7f7G5o4BV6c7DBdiG1RRQd+y1bvqRyYtPfMK85UM95vsapqQ==
+"@types/node@^12.6.8":
+  version "12.6.8"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.6.8.tgz#e469b4bf9d1c9832aee4907ba8a051494357c12c"
+  integrity sha512-aX+gFgA5GHcDi89KG5keey2zf0WfZk/HAQotEamsK2kbey+8yGKcson0hbK8E+v0NArlCJQCqMP161YhV6ZXLg==
 
-"@types/prettier@^1.16.4":
-  version "1.16.4"
-  resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-1.16.4.tgz#5e5e97702cb68498aaba7349b941648daaf2385c"
-  integrity sha512-MG7ExKBo7AQ5UrL1awyYLNinNM/kyXgE4iP4Ul9fB+T7n768Z5Xem8IZeP6Bna0xze8gkDly49Rgge2HOEw4xA==
+"@types/prettier@^1.18.0":
+  version "1.18.0"
+  resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-1.18.0.tgz#d2dbe4d5f76b455138f13a2d881278e2c06a733d"
+  integrity sha512-5N6WK/XXs9PLPpge2KOmOSaIym2vIo32GsrxM5YOFs7uZ8R9L/acg+hQzWsfwoHEpasqQkH0+3LzLTbiF1GFLQ==
 
 "@types/rimraf@^2.0.2":
   version "2.0.2"
@@ -597,10 +597,10 @@
   dependencies:
     "@sindresorhus/tsconfig" "^0.4.0"
 
-"@typeskrift/tslint@^0.1.4":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@typeskrift/tslint/-/tslint-0.1.4.tgz#165ac27b8b2fddd8b9c854acb7054b683337a862"
-  integrity sha512-qIhXdfp6x/FZD4B1dylK3/CvFyQ+0UX5IS7xG6TAIU+T9LxBRQKf3Y1MUTCgE5Iv0KwGYrrbEDYzh7JN7zlnWg==
+"@typeskrift/tslint@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@typeskrift/tslint/-/tslint-0.1.5.tgz#731e550653f2930d03118a8164bfd55b8f4521dc"
+  integrity sha512-GQODX9BhXReqmQh8eGKndRJc04whJ0JOoi4BkxUC/N0PMRwR9DJ7ucg555rWF1mZ5bdiplCPJyd5EEY6kWD6Bg==
   dependencies:
     "@sindresorhus/tsconfig" "^0.4.0"
     tslint "^5.16.0"
@@ -4121,7 +4121,7 @@ pretty-format@^24.8.0:
     ansi-styles "^3.2.0"
     react-is "^16.8.4"
 
-probot-config@^1.0.1:
+probot-config@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/probot-config/-/probot-config-1.1.0.tgz#f8131c9f4f3e499e7bfc5c79284d012e4a8d2f25"
   integrity sha512-FkTWzitDzkmGG3Pt7zLl2sTRpHuRbrUnKUbxs+7ruqoLv2dOEdc+sU1+uk0EP+fRR84sBkQfv8UjGASdeKT5lg==
@@ -4129,7 +4129,7 @@ probot-config@^1.0.1:
     deepmerge "^2.2.1"
     js-yaml "^3.10.0"
 
-probot@^9.2.15, probot@^9.2.19:
+probot@^9.2.19:
   version "9.2.19"
   resolved "https://registry.yarnpkg.com/probot/-/probot-9.2.19.tgz#310dfe3283fc09e46408926651b67990d08381a8"
   integrity sha512-ccUgs/r0c8w3jh+UTZcM9HlbPOufgXOjtBglwrvV14JNPXyLIKVVwLnE63swpXRPbImSR7oaM2sR0dO9xeIfrQ==

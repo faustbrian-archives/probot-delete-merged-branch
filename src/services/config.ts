@@ -5,7 +5,6 @@ import { Context } from "probot";
 export const loadConfig = async (context: Context): Promise<Record<string, any>> =>
 	(await getConfig(
 		context,
-		"botamic.yml",
 		Joi.object({
 			deleteMergedBranch: Joi.object({
 				exclude: Joi.array()
@@ -18,4 +17,4 @@ export const loadConfig = async (context: Context): Promise<Record<string, any>>
 		})
 			.unknown(true)
 			.default(),
-	)).deleteMergedBranch;
+	));
