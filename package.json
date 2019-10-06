@@ -62,7 +62,7 @@
 	},
 	"dependencies": {
 		"@botamic/toolkit": "^0.3.0",
-		"@hapi/joi": "^15.1.0",
+		"@hapi/joi": "^16.0.0",
 		"nanomatch": "^1.2.13",
 		"probot": "^9.2.19"
 	},
